@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>Bank RESPUBLIKA</p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">МЕНЮ</a>
+                </li>
+                <li>
+                    <a href="#">О НАС</a>
+                </li>
+                <li>
+                    <a href="#">СЕТЬ ОБСЛУЖИВАНИЯ</a>
+                </li>
+                <li>
+                    <a href="#">ТАРИФЫ</a>
+                </li>
+                <li>
+                    <a href="#">КОНТАКТЫ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <form id="form">
+            <h1>Расчёт вклада</h1>
+            <div class="main__flex">
+                <div class="main__flex__colums">
+                    <label for="deposit">Первоначальная сумма:</label>
+                    <label for="amount">Сумма ежемесячного пополнения:</label>
+                    <label for="interest">Процентная ставка (%):</label>
+                    <label for="term">Срок вклада (дней):</label>
+                </div>
+                <div>
+                    <input type="text" name="deposit" id="deposit" required><br />
+                    <input type="text" name="amount" id="amount" required><br />
+                    <input type="text" name="interest" id="interest" required><br />
+                    <input type="text" name="term" id="term" required><br />
+                </div>
+            </div>
+            <button type="submit">Рассчитать</button>
+        </form>
+        <div id="block">
+            <p>Ошибочка</p>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Первоначальная сумма:</th>
+                        <th>Сумма ежемесячного пополнения :</th>
+                        <th>Процентная ставка (%):</th>
+                        <th>Срок вклада (дней):</th>
+                        <th>Окончательная сумма:</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 1992 - 2022 Bank Respublika</p>
+    </footer>
+    <script src="./JavaScript/JavaScript.js">
+    </script>
+
+</body>
+
+</html>
